@@ -10,7 +10,10 @@ body{
     font: normal 16px Arial, Helvetica, sans-serif;
 
     line-height: 1.6em;
-    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    list-style: none;
 }
 
 .container{
@@ -18,37 +21,81 @@ body{
     margin: auto;
 }
 
-.box-1{
+.filler{
+    height: 200px;
+}
+
+.collapse{
     background-color: #333;
-    color: #fff;
-
-    
-    border-right: 3px red solid;
-    border-left: 3px red solid;
-    border-top: 3px red solid;
-    border-bottom: 3px red solid;
-   /* Same as above */ 
-    border: 3px red solid;
-
-    border-width: 3px;
-    border-bottom-width: 10px;
-    border-top-style: dotted;
-
-    border: 3px red solid;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    /* Same as above */
-    padding: 20px;
-
-    margin-top: 20px;
-    margin: 20px 0;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
 }
 
-.box-1 h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
+.active, .collapse:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.collapse:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    float: left;
+    margin: 20px;
     
 }
+  
+.title {
+    color: grey;
+    font-size: 18px;
+}
+  
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+  
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
