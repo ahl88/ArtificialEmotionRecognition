@@ -28,7 +28,19 @@
         <!--Web Application Panel / RECORD AUDIO-->
         <button type="button" class="collapse"><a name="WebApp">Web Application</a></button>
         <div class="panel">
-            <img src="../assets/images/sample.png" alt="voice recognition image" class="filler">
+            <!--Audio Recording -->
+            <audio id="fileplayer" controls></audio>
+            <audio id="player" controls></audio>
+            <br>
+            <div>
+                <input type="file" accept="audio/*" capture id="filerecorder">
+                Stream Player
+            </div>
+            
+            
+
+            <button id="start-btn" class="recordBtn">Start recording</button>
+            <button id="stop-btn" class="recordBtn">Stop recording</button>   
         </div>
 
         <!--About Us Panel-->

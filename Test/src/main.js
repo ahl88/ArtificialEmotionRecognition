@@ -32,4 +32,27 @@ window.onscroll = function() {
 
 }
 
+/*Audio Recording Script */
+const recorder = document.getElementById('filerecorder');
+const streamplayer = document.getElementById('player');
+const fileplayer = document.getElementById('fileplayer');
 
+//Audio File
+recorder.addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  const url = URL.createObjectURL(file);
+  // Do something with the audio file.
+  fileplayer.src = url;
+});
+
+//Microphone Streaming
+  const handleSuccess = function(stream) {
+    if (window.URL) {
+      streamplayer.srcObject = stream;
+    } else {
+      streamplayer.src = stream;
+    }
+  };
+
+  navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+      .then(handleSuccess);
