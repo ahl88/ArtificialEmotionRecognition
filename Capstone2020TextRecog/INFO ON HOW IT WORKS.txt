@@ -1,0 +1,17 @@
+Currently setup to be able to analyse any body of text you put in the "read" file.
+
+
+First it negates useless words like "I", "my", "me", etc.
+
+
+Then it uses remaining words and compares it with standard emotions list setup in "emotions". This
+file can be updated or replaced with any number of emotion defining files. It currently uses
+many different types of emotions but can be updated to only a basic set of 5 to make things easier.
+
+
+It then provides count of total emotions analysed and a final emotion based on most frequent
+detected.
+
+
+Then it gives a sentinment rating of either positive or negative and the details on that.
+I included a sample screenshot of analysis of a random speech.
