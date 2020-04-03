@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Artificial Emotion Recognition</title> 
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -29,17 +29,36 @@
         <button type="button" class="collapse"><a name="WebApp">Web Application</a></button>
         <div class="panel">
             <!--Audio Recording -->
+            <br>
+            <h3>WAV file upload Demo</h3>
             <audio id="fileplayer" controls></audio>
             <div>
                 <input type="file" accept="audio/*" capture id="filerecorder">
             </div>
+            <br>
+            <hr>
+
+            <br>
+            <h3>Record WAV file Demo</h3>
             
             <button id="start-btn">Start Recording</button>
             <button id="stop-btn" disabled>Stop Recording</button>   
             <button id="pause-btn" disabled>Pause</button>
             <p><strong>Recordings:</strong></p>
   	        <ol id="recordingsList"></ol>
-            
+            <br>
+            <hr>
+
+            <br>
+            <h3>Send file to backend Demo</h3>
+
+            <form method = "post" enctype="multipart/form-data" action="/">
+                <input type = "file" name = "filename">
+                <input type = "submit" name = "upload">
+            </form>
+            <br>
+            <hr>
+
         </div>
 
         <!--About Us Panel-->
@@ -53,7 +72,7 @@
         <div class="panel">
             <!--Dev's Profile-->
             <div class="card">
-                <img src="../assets/images/profile.jpg" alt="Person" style="width:60%">
+                <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
                 <h1>Devvrat Patel</h1>
                 <p class="title">Member (POC)</p>
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> <!--Link to Email-->
@@ -64,7 +83,7 @@
 
             <!--Andy's Profile-->
             <div class="card">
-                <img src="../assets/images/profile.jpg" alt="Person" style="width:60%">
+                <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
                 <h1>Andy Lee</h1>
                 <p class="title">Member</p>
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> 
@@ -75,7 +94,7 @@
 
             <!--Jahidul's Profile-->
             <div class="card">
-                <img src="../assets/images/profile.jpg" alt="Person" style="width:60%">
+                <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
                 <h1>Jahidul Islam</h1>
                 <p class="title">Member</p>
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> 
@@ -86,7 +105,7 @@
 
             <!--Nathan's Profile-->
             <div class="card">
-                <img src="../assets/images/profile.jpg" alt="Person" style="width:60%">
+                <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
                 <h1>Nathan Silvia</h1>
                 <p class="title">Memer</p>
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> 
@@ -97,7 +116,7 @@
 
             <!--Shivani's Profile-->
             <div class="card">
-                <img src="../assets/images/profile.jpg" alt="Person" style="width:60%">
+                <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
                 <h1>Shivani Sunil</h1>
                 <p class="title">Member</p>
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> 
