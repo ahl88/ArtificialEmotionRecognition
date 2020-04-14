@@ -1,6 +1,7 @@
+const PORT = 80;
 var express = require("express"),
 	app = express(),
-	http = require("http").Server(app).listen(80),
+	http = require("http").Server(app).listen(PORT),
 	upload = require("express-fileupload");
 
 app.use(upload())
@@ -9,6 +10,7 @@ app.use(express.static('../public'));
 
 
 console.log("Server Started!")
+console.log("Listening on port " + PORT + "...")
 
 app.get("/", function(req,res){
 	res.sendFile(__dirname+"/index.html")

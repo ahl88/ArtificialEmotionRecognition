@@ -29,12 +29,18 @@
         <button type="button" class="collapse"><a name="WebApp">Web Application</a></button>
         <div class="panel">
             <!--Audio Recording -->
+            <!--Combination-->
             <br>
-            <h3>WAV file upload Demo</h3>
-            <audio id="fileplayer" controls></audio>
-            <div>
-                <input type="file" accept="audio/*" capture id="filerecorder">
-            </div>
+            <h3>Combined Demos</h3>
+            <audio id="fileplayerSync" controls></audio>
+            <form method = "post" enctype="multipart/form-data" action="/" id="AudioForm">
+                <label for="file">Choose audio file to recognize emotion</label>
+                <input type="file" accept="audio/*" name="filename" capture id="filerecorderSync">
+                <input type = "submit" name = "upload">
+            </form>
+            
+            
+            
             <br>
             <hr>
 
@@ -44,18 +50,6 @@
             <button id="start-btn">Start Recording</button>
             <button id="stop-btn" disabled>Stop Recording</button>   
             <button id="pause-btn" disabled>Pause</button>
-            <p><strong>Recordings:</strong></p>
-  	        <ol id="recordingsList"></ol>
-            <br>
-            <hr>
-
-            <br>
-            <h3>Send file to backend Demo</h3>
-
-            <form method = "post" enctype="multipart/form-data" action="/">
-                <input type = "file" name = "filename">
-                <input type = "submit" name = "upload">
-            </form>
             <br>
             <hr>
 

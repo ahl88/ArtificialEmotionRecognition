@@ -33,9 +33,8 @@ window.onscroll = function() {
 }
 
 /*Audio Recording Script */
-const recorder = document.getElementById('filerecorder');
-const streamplayer = document.getElementById('player');
-const fileplayer = document.getElementById('fileplayer');
+const recorder = document.getElementById('filerecorderSync');
+const fileplayer = document.getElementById('fileplayerSync');
 
 
 //Audio File
@@ -131,19 +130,13 @@ function stopRecording() {
 
 function createDownloadLink(blob) {
   var url = URL.createObjectURL(blob);
-  var au = document.createElement('audio');
-  var li = document.createElement('li');
-  var link = document.createElement('a');
+  var au = document.getElementById('fileplayerSync');
+  // var form = document.getElementById("AudioForm")
+  
   //add controls to the <audio> element 
   au.controls = true;
   au.src = url;
   //link the a element to the blob 
-  link.href = url;
-  link.download = new Date().toISOString() + '.wav';
-  link.innerHTML = link.download;
-  //add the new audio and a elements to the li element 
-  li.appendChild(au);
-  li.appendChild(link);
-  //add the li element to the ordered list 
-  recordingsList.appendChild(li);
+  
+
 }
