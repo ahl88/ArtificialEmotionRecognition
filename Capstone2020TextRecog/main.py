@@ -5,6 +5,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
+import numpy as np
 
 text = open('read.txt',encoding='utf-8').read()
 
@@ -44,6 +45,9 @@ for i in emotion_list:
         max=freq
         res=i
 
+
+
+
 #print most common emotion
 print("The emotion mostly expressed is:" + str(res),'\n')
 
@@ -60,6 +64,43 @@ def sentiment_analyze(sentiment_text):
         print("This is a Neutral Sentiment",'\n')
 
     print("A more detailed view of sentiment analysis: ",score)
+
+
+
+
+
+
+
+
+
+
+
+
+x = sum(w.values())
+# print(w.values())
+rList = list(w.values())
+print("The percentages of each emotions appearance are as follows:")
+a = (rList[0]/x*100)
+print("%.3f" % round(a, 3), "(Most Common):", i)
+b = (rList[1]/x*100)
+print("%.3f" % round(b, 3))
+c = (rList[2]/x*100)
+print("%.3f" % round(c, 3))
+d = (rList[3]/x*100)
+print("%.3f" % round(d, 3))
+e = (rList[4]/x*100)
+print("%.3f" % round(e, 3))
+f = (rList[5]/x*100)
+print("%.3f" % round(f, 3))
+g = (rList[6]/x*100)
+print("%.3f" % round(g, 3))
+h = (rList[7]/x*100)
+print("%.3f" % round(h, 3))
+
+
+
+
+
 
 
 sentiment_analyze(cleaned_text)

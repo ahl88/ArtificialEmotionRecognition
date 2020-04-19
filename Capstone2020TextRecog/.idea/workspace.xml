@@ -88,6 +88,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585508093667</updated>
       <workItem from="1585508107699" duration="6230000" />
+      <workItem from="1585876718186" duration="1224000" />
+      <workItem from="1587259399471" duration="14672000" />
     </task>
     <servers />
   </component>
@@ -95,29 +97,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1585514445697">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1587274718944">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585514445697" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1585514445697">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1587274718944" />
+    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1587274718944">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585514445697" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1585514445697">
+    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1587274718944" />
+    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1587274718944">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585514445697" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1585514445697">
+    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1587274718944" />
+    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1587274718944">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585514445697" />
+    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1587274718944" />
     <state x="922" y="183" key="SettingsEditor" timestamp="1585509475048">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="922" y="183" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1585509475048" />
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587259399742">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587259399742" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Capstone2020TextRecog$setting.coverage" NAME="setting Coverage Results" MODIFIED="1585509511862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Capstone2020TextRecog$main.coverage" NAME="main Coverage Results" MODIFIED="1585513742166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Capstone2020TextRecog$main.coverage" NAME="main Coverage Results" MODIFIED="1587274718936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
