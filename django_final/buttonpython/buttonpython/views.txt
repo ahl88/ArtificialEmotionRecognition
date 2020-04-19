@@ -1,0 +1,15 @@
+def output(request):
+    #data = requests.get("https://www.google.com/")
+    inp = request.POST.get('document')
+    model = keras.models.load_model('C:\\Users\\drkdfr\\Desktop\\django_final\\Emotion_Voice_Detection_Model_2.h5')
+    data, sampling_rate = librosa.load(inp)
+    mfccs = np.mean(librosa.feature.mfcc(y=data, sr=sampling_rate, n_mfcc=40).T, axis=0)
+    x = np.expand_dims(mfccs, axis=1)
+    x = np.expand_dims(x, axis=0)
+    predictions = model.predict_proba(x)
+    data = predictions*100
+    print (data)
+    data = ''.join(str(v) for v in data)
+    
+    
+    return render(request,'index.html',{'data':data})
