@@ -61,7 +61,7 @@
                     <p>Neutral</p>
                     <p>80%</p>
                     <div class="emotion">
-                        <div class="emotionLevel" name="NeutralLevel" style="width: 80%"></div>
+                        <div class="emotionLevel" name="NeutralLevel" style="width: 80%" id="NeutralLevel"></div>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@
         <!--About Us Panel-->
         <button type="button" class="collapse"><a name="About">About Us</a></button>
         <div class="panel">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque suscipit quo obcaecati neque quis fuga minima iste ad illo commodi natus ullam modi in, ducimus cum tenetur, eum animi dignissimos adipisci necessitatibus quisquam voluptatibus? Consequatur adipisci quam doloremque facere quidem sit illum non praesentium, dicta aperiam maiores est cumque a.
+            Created by a few engineering students with the help of Interactions LLC, this artificial emotion recognition project was created in an effort to teach automated customer feedback systems to understand human emotion. Using machine learning, we did just this by developing a program that can determine emotion from speech and text. We were far from the first team of people to work on a project of this kind, so we tried to differentiate ourselves by improving upon the artificial intelligence models of others and providing users with an easy-to-use website that gives them clear results fast. This was completed as a part of the Rutgers School of Engineering’s Senior Design Capstone Project.
         </div>
 
         <!--Team Members Panel-->
@@ -172,7 +172,7 @@
             <div class="card">
                 <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
                 <h1>Nathan Silvia</h1>
-                <p class="title">Memer</p>
+                <p class="title">Member</p>
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> 
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-linkedin"></i></a> 
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-github"></i></a> 
@@ -184,6 +184,28 @@
                 <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
                 <h1>Shivani Sunil</h1>
                 <p class="title">Member</p>
+                <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> 
+                <a class="profile_contact_icon_a" href="#"><i class="fa fa-linkedin"></i></a> 
+                <a class="profile_contact_icon_a" href="#"><i class="fa fa-github"></i></a> 
+                <p><button class="contact_button">Contact</button></p>
+            </div>
+
+            <!--Advisor's Profile-->
+            <div class="card">
+                <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
+                <h1>Advisor Name</h1>
+                <p class="title">Advisor</p>
+                <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> 
+                <a class="profile_contact_icon_a" href="#"><i class="fa fa-linkedin"></i></a> 
+                <a class="profile_contact_icon_a" href="#"><i class="fa fa-github"></i></a> 
+                <p><button class="contact_button">Contact</button></p>
+            </div>
+
+            <!--Advisor's Profile-->
+            <div class="card">
+                <img src="./assets/images/profile.jpg" alt="Person" style="width:60%">
+                <h1>Advisor Name</h1>
+                <p class="title">Advisor</p>
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-at"></i></a> 
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-linkedin"></i></a> 
                 <a class="profile_contact_icon_a" href="#"><i class="fa fa-github"></i></a> 
@@ -210,43 +232,56 @@
             <ul>
                 <li>
                     <p>
-                        Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                        Q: How does all this work?
                         <br>
                         
-                        A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque a quam consequuntur autem eligendi numquam culpa odit velit pariatur amet, nesciunt dolorum voluptatibus consectetur mollitia labore accusantium rem. Error!
+                        A: It all starts here on this web interface where audio is captured from the user, either through a microphone or a sound clip you upload as a file. The audio file is then sent to Google’s Speech-to-Text engine which converts your audio clip into text. Then our machine-learning algorithm uses the audio file, the text file, and a voice database to determine the emotion conveyed in the clip. Finally, the results are relayed back to the web interface where you can see what percentage of each specific emotion is understood from your input.
                     </p>  
                 </li>
+                <br>
                 <li>
                     <p>
-                        Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                        Q: What kind of applications does this project have?
                         <br>
                         
-                        A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque a quam consequuntur autem eligendi numquam culpa odit velit pariatur amet, nesciunt dolorum voluptatibus consectetur mollitia labore accusantium rem. Error!
+                        A: We believe that our project would be appropriate for a variety of applications, especially those that want to analyze the way users react emotionally to something. We originally set out to create something that would work in a customer service context. The idea was that if automated customer feedback systems had a way to understand human emotions, then they could be less frustrating to use. If the system detected anger, maybe it will say something to calm the user down or connect the user with a real person, who can more easily diffuse the situation. Our system would be applicable in this kind of scenario.
                     </p>  
                 </li>
+                <br>
                 <li>
                     <p>
-                        Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                        Q: What kind of challenges were faced during the development of this project?
                         <br>
                         
-                        A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque a quam consequuntur autem eligendi numquam culpa odit velit pariatur amet, nesciunt dolorum voluptatibus consectetur mollitia labore accusantium rem. Error!
+                        A: We struggled somewhat with putting the individual parts of our project together. It was particularly tough to combine the speech and text emotion recognition models into a single model. It was also hard for us to find the right database of audio clips to train our models, as the databases play a tremendous role when it comes to the accuracy of the speech recognition module.
                     </p>  
                 </li>
+                <br>
                 <li>
                     <p>
-                        Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                        Q: What language was this project coded in?
                         <br>
                         
-                        A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque a quam consequuntur autem eligendi numquam culpa odit velit pariatur amet, nesciunt dolorum voluptatibus consectetur mollitia labore accusantium rem. Error!
+                        A: We used HTML, CSS, and JavaScript for the web interface, Python for the machine learning side of things. Check out our code on GitHub!
                     </p>  
                 </li>
+                <br>
                 <li>
                     <p>
-                        Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                        Q: What are the future plans for this project?
                         <br>
                         
-                        A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque a quam consequuntur autem eligendi numquam culpa odit velit pariatur amet, nesciunt dolorum voluptatibus consectetur mollitia labore accusantium rem. Error!
+                        A: We are considering polishing our work and implementing it as an open API for all to use independently of this website. So, look forward to that!
                     </p>  
+                </li>
+                <br>
+                <li>
+                    <p>
+                        Q: How do I contact the developers of this project?
+                        <br>
+
+                        A: See the Team Members section above for our contact information.
+                    </p>
                 </li>
 
 
@@ -256,6 +291,10 @@
         <br>
         <hr>
         <br>
+        <br>
+        <br>
+        <br>
+
         <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
         <script type="text/javascript" src="./clientJS/main.js"></script>
     </body>

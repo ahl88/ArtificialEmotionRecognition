@@ -1,0 +1,52 @@
+doctype html
+head
+  title Artificial Emotion Recognition
+  link(rel='stylesheet' type='text/css' href='./css/style.css')
+  // Add icon library
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+// Bar graph of emotion levels
+br
+h3 Graph Demo
+.graph
+  .emotionBox
+    p Neutral
+    p#numNeutral #{numNeutral}
+    .emotion
+      #NeutralLevel.emotionLevel(style='width: 80%')
+  .emotionBox
+    p Calm
+    p#numCalm #{numCalm}
+    .emotion
+      #CalmLevel.emotionLevel(style='width: 30%')
+  .emotionBox
+    p Happy
+    p#numHappy #{numHappy}
+    .emotion
+      #HappyLevel.emotionLevel(style='width: 40%')
+  .emotionBox
+    p Sad
+    p#numSad #{numSad}
+    .emotion
+      #SadLevel.emotionLevel(style='width: 10%')
+  .emotionBox
+    p Angry
+    p#numAngry #{numAngry}
+    .emotion
+      #AngryLevel.emotionLevel(style='width: 20%')
+  .emotionBox
+    p Fearful
+    p#numFearful #{numFearful}
+    .emotion
+      #FearfulLevel.emotionLevel(style='width: 40%')
+  .emotionBox
+    p Disgust
+    p#numDisgust #{numDisgust}
+    .emotion
+      #DisgustLevel.emotionLevel(style='width: 3%')
+  .emotionBox
+    p Surprised
+    p#numSurprised #{numSurprised}
+    .emotion
+      #SurprisedLevel.emotionLevel(style='width: 10%')
+br
+script(type='text/javascript' src='./clientJS/result.js')

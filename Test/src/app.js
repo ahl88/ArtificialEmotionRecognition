@@ -1,8 +1,9 @@
-const PORT = 80;
+const PORT = process.env.PORT || 80;
 var express = require("express"),
 	app = express(),
 	http = require("http").Server(app).listen(PORT),
-	upload = require("express-fileupload");
+	upload = require("express-fileupload"),
+	path = require('path');
 
 app.use(upload())
 app.use(express.json());
@@ -12,9 +13,14 @@ app.use(express.static('../public'));
 console.log("Server Started!")
 console.log("Listening on port " + PORT + "...")
 
+//Home Route
 app.get("/", function(req,res){
 	res.sendFile(__dirname+"/index.html")
 })
+
+//Load  View Engine
+app.set('views', path.join(__dirname, '../views'));
+app.set('view engine', 'pug')
 
 app.post("/", function(req,res){
 	if(req.files){
@@ -26,9 +32,32 @@ app.post("/", function(req,res){
 				res.send("error occured")
 			}
 			else{
-				res.send("Done!")
+				//run python code on filename
+				//get array of emotion levels
+				var results = [0.3,0.3,0.4,0.1,0.2,0.4,0.03,0.1]
+				var resultsStr = percentString(results);
+				console.log(resultsStr);
+				console.log('sending')
+				res.render('result', {
+					numNeutral:resultsStr[0],
+					numCalm:resultsStr[1],
+					numHappy:resultsStr[2],
+					numSad:resultsStr[3],
+					numAngry:resultsStr[4],
+					numFearful:resultsStr[5],
+					numDisgust:resultsStr[6],
+					numSurprised:resultsStr[7],
+				});
 			}
 		})
 
 	}
 })
+
+function percentString(result) {
+	var output  = []
+	for (let index = 0; index < result.length; index++) {
+		output[index] = ""+(result[index]*100)+"%";
+	}
+	return output;
+}
