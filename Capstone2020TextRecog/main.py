@@ -1,6 +1,7 @@
 
 import string
-#import speech_recognition
+import speech_recognition
+import sys
 from collections import Counter
 from collections import OrderedDict
 from nltk.tokenize import word_tokenize
@@ -9,22 +10,23 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt
 import numpy as np
 
-#wavFile = “03-01-01-01-01-01-06.wav”
+wavFile = 'YAF_rot_fear.wav'
 
 # Initialize the recognition engine
-#rec = speech_recognition.Recognizer();
+rec = speech_recognition.Recognizer();
 
 # Convert the audio to text now
 
-#with speech_recognition.AudioFile(wavFile) as source: audio = rec.record(source)
+with speech_recognition.AudioFile(wavFile) as source: audio = rec.record(source)
 
 # Output the transcript as text
-#output = rec.recognize_google(audio)
+output = rec.recognize_google(audio)
 
 
 
-text = open('read.txt',encoding='utf-8').read()
+text = output
 
+#open('read.txt',encoding='utf-8').read()
 lower_case = text.lower()
 
 cleaned_text = lower_case.translate(str.maketrans('','',string.punctuation))
@@ -37,6 +39,9 @@ for word in tokenized_words:
     if word not in stopwords.words('english'):
         final_words.append(word)
 
+if not final_words:
+    print([0,0,0,0,0,0,0,0])
+    sys.exit("No emotion found")
 
 emotion_list = []
 with open('emotions.txt','r') as file:
@@ -49,12 +54,22 @@ with open('emotions.txt','r') as file:
         if word in final_words:
             emotion_list.append(emotion)
 
+if not emotion_list:
+    print([0, 0, 0, 0, 0, 0, 0, 0])
+    sys.exit("No emotion found")
+
 
 #print(emotion_list)
 w = Counter(emotion_list)
+x = sum(w.values())
+rkeys = list(w.keys())
+rList = list(w.values())
+
 print("The considered emotions are:",w,'\n')
 max = 0
 res = emotion_list[0]
+
+
 for i in emotion_list:
     freq=emotion_list.count(i)
     if freq>max:
@@ -82,9 +97,7 @@ def sentiment_analyze(sentiment_text):
 
 
 
-x = sum(w.values())
-rkeys = list(w.keys())
-rList = list(w.values())
+
 print("The percentages of each emotions appearance are as follows:")
 
 
