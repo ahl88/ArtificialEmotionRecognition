@@ -23,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -89,7 +89,9 @@
       <updated>1585508093667</updated>
       <workItem from="1585508107699" duration="6230000" />
       <workItem from="1585876718186" duration="1224000" />
-      <workItem from="1587259399471" duration="14672000" />
+      <workItem from="1587259399471" duration="15141000" />
+      <workItem from="1587407971655" duration="612000" />
+      <workItem from="1587420815343" duration="11409000" />
     </task>
     <servers />
   </component>
@@ -97,33 +99,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1587274718944">
+    <state width="1170" height="304" key="GridCell.Tab.0.bottom" timestamp="1587432267054">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1587274718944" />
-    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1587274718944">
+    <state width="1170" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1587432267054" />
+    <state width="1170" height="304" key="GridCell.Tab.0.center" timestamp="1587432267054">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1587274718944" />
-    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1587274718944">
+    <state width="1170" height="304" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1587432267054" />
+    <state width="1170" height="304" key="GridCell.Tab.0.left" timestamp="1587432267054">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1587274718944" />
-    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1587274718944">
+    <state width="1170" height="304" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1587432267054" />
+    <state width="1170" height="304" key="GridCell.Tab.0.right" timestamp="1587432267054">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1587274718944" />
-    <state x="922" y="183" key="SettingsEditor" timestamp="1585509475048">
+    <state width="1170" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1587432267054" />
+    <state x="496" y="331" key="SettingsEditor" timestamp="1587429013367">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="922" y="183" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1585509475048" />
-    <state x="656" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587259399742">
+    <state x="496" y="331" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1587429013367" />
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587420815889">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="656" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587259399742" />
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587420815889" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Capstone2020TextRecog$setting.coverage" NAME="setting Coverage Results" MODIFIED="1585509511862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Capstone2020TextRecog$main.coverage" NAME="main Coverage Results" MODIFIED="1587274718936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Capstone2020TextRecog$main.coverage" NAME="main Coverage Results" MODIFIED="1587432267047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
