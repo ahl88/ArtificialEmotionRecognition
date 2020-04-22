@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Using AJAX to upload WAV Files ></title>
+</head>
+
+<body>
+Creates 2 buttons that allows user to select and upload multiple files using AJAX 
+ <input type= "file" id= "inputFile" multiple>
+<button id=btnUpload>Upload Files</button>
+
+<script>
+
+const inputFile=document.getElementbyID("inputFile")
+const inputFile=document.getElementbyID("btnUpload")
+btnUpload.addEventListener("Click", function){
+    const xhr = newXMLHTTPrequest();
+    const formData = new FormData();
+    console.log(inputFile.files)
+
+    for (const file of inputFile.files){
+     formData.append('MyFiles[]', file)
+
+	}
+
+    xhr.open("post", "Upload.php") //2nd input has to be the send address, in this code it is the php server
+    xhr.send(formData)
+
+
+
+}
+
+
+
+
+</body>
+</script>
+
+</html>
