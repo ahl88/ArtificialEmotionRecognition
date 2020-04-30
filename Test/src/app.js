@@ -34,7 +34,7 @@ app.post("/", function(req,res){
 			else{
 				//run python code on filename
 				//get array of emotion levels
-				var results = [0.2,0.3,0.4,0.1,0.2,0.4,0.03,0.1]
+				var results = [0.5,0.0,0.5,0.0,0.0,0.0,0.0,0.0]
 				var resultsStr = percentString(results);
 				console.log(resultsStr);
 				console.log('sending')
@@ -47,6 +47,7 @@ app.post("/", function(req,res){
 					numFearful:resultsStr[5],
 					numDisgust:resultsStr[6],
 					numSurprised:resultsStr[7],
+					textString: 'Im so hungry Im so excited to eat',
 				});
 			}
 		})
