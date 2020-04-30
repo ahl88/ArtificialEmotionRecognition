@@ -34,7 +34,7 @@ app.post("/", function(req,res){
 			else{
 				//run python code on filename
 				//get array of emotion levels
-				var results = [0.3,0.3,0.4,0.1,0.2,0.4,0.03,0.1]
+				var results = [0.2,0.3,0.4,0.1,0.2,0.4,0.03,0.1]
 				var resultsStr = percentString(results);
 				console.log(resultsStr);
 				console.log('sending')
